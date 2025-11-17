@@ -1,0 +1,6 @@
+env.sh
+allure-results
+allure-results-batch
+allure-report
+dist
+node_modules

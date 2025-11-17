@@ -1,0 +1,45 @@
+{
+  "name": "octomind-allure-converter",
+  "version": "1.0.0",
+  "description": "Converts Octomind test reports to Allure Report format",
+  "main": "dist/converter.js",
+  "bin": {
+    "octomind-to-allure": "dist/converter.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/converter.ts",
+    "convert": "ts-node src/converter.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "octomind",
+    "allure",
+    "test",
+    "converter",
+    "e2e",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/node-fetch": "^2.6.9",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
